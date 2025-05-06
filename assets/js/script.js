@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
     
-    // Fechar o dropdown ao clicar fora
+    // fechar o dropdown ao clicar fora
     document.addEventListener('click', function (e) {
         dropdownToggle.forEach((toggle) => {
             const parent = toggle.closest('.dropdown-item');
@@ -42,4 +42,21 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         searcOverlay.style.display = 'none';
     }
+})
+
+// Galeria
+const imagens = document.querySelectorAll('.galeria img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+imagens.forEach((img) => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('show');
+    })
+})
+
+// esconder o lightbox
+lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('show');
 })
