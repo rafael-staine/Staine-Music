@@ -14,7 +14,7 @@
     <!-- link favicom -->
     <link
       rel="shortcut icon"
-      href="assets/img/favicon-branco/favicon.ico"
+      href="assets/img/favicon-preto/favicon.ico"
       type="image/x-icon"
     />
 
@@ -42,7 +42,7 @@
     <header class="header active">
       <div class="container">
         <a href="#" class="logo">
-          <img src="assets/img/logo-branca.png" alt="logo staine music" />
+          <img src="assets/img/logo/logo-branca.png" alt="logo staine music"/>
         </a>
 
         <!-- nav menu -->
@@ -64,7 +64,7 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#" class="dropdown-link"> Guitarra </a>
+                  <a href="#" class="dropdown-link"> Aulas </a>
                 </li>
 
                 <li>
@@ -73,6 +73,10 @@
 
                 <li>
                   <a href="#" class="dropdown-link"> Contra-baixo </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Teclado </a>
                 </li>
 
                 <li>
@@ -153,7 +157,7 @@
     </section>
 
     <!-- serviços -->
-     <section class="section services" aria-label="service">
+     <section class="section service" aria-label="service">
         <div class="container-serv">
             <p class="section-subtitle text-center">Nossos Serviços</p>
             <h2 class="h2 section-title text-center">O que oferecemos</h2>
@@ -164,11 +168,11 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/aulas.png" alt="aulas" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Aulas de Instrumentos</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
@@ -179,11 +183,11 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/limpeza.png" alt="Limpeza" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Limpeza de Instrumentos</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
@@ -194,21 +198,21 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/manutencao.png" alt="manutencao" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Manutenção de Instrumentos</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
                 </li>
 
-                <!-- imagem centro -->
+                <!-- img centro -->
                  <li class="service-banner">
                     <figure>
-                        <img src="" alt="" class="w-100" />
+                        <img src="assets/img/logo/logo-branca.png" alt="img-centro" class="w-100" />
                     </figure>
                  </li>
 
@@ -216,11 +220,11 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/troca-cordas.png" alt="troca-cordas" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Troca de Cordas</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
@@ -231,11 +235,11 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/compra.png" alt="compra" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Compra de Instrumentos</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
@@ -246,20 +250,52 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100" />
+                            <img src="assets/img/png/vendas.png" alt="venda" class="w-100" width="50" height="50"/>
                         </div>
 
                         <div>
-                            <h3 class="h3 card-title">Serviços</h3>
+                            <h3 class="h3 card-title">Vendas de Instrumentos</h3>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
                         </div>
                     </div>
                 </li>
-
             </ul>
         </div>
      </section>
+
+    <!-- Liguin -->
+     <section class="container-login">
+          <div class="wrapper">
+              <div class="form-box login">
+                  <h2>Login</h2>
+
+                  <form action="#">
+                      <div class="input-box">
+                          <input type="text" required/>
+                          <label>Usuário</label>
+                          <ion-icon name="person"></ion-icon>  
+                      </div>
+
+                      <div class="input-box">
+                        <input type="text" required/>
+                        <label>Senha</label>
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </div>
+
+                    <button type="submit" class="btn btn-login">Entrar</button>
+
+                    <div class="logreg-link">
+                        <p>
+                            Não possui uma conta? 
+                            <a href="#" class="register-link">Clique aqui!</a>
+                        </p>
+                    </div>
+                  </form>
+                </div>
+            </div>
+     </section>
+     
 
     <!-- script -->
     <script src="assets/js/script.js"></script>
