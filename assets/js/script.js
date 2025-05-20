@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
     
-    // fechar o dropdown ao clicar fora
+    // Fechar o dropdown ao clicar fora
     document.addEventListener('click', function (e) {
         dropdownToggle.forEach((toggle) => {
             const parent = toggle.closest('.dropdown-item');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-// barra de pesquisa
+// Barra de pesquisa
 const searchToggle = document.getElementById('searchToggle');
 const searcOverlay = document.getElementById('searchOverlay');
 const closeSearch = document.getElementById('closeSearch');
@@ -32,12 +32,12 @@ searchToggle.addEventListener('click', () => {
     }, 100);
 })
 
-// fechar o botão
+// Fechar o botão
 closeSearch.addEventListener('click', () => {
     searcOverlay.style.display = 'none';
 })
 
-// fechar com o ESC
+// Fechar com o ESC
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         searcOverlay.style.display = 'none';
@@ -56,7 +56,28 @@ imagens.forEach((img) => {
     })
 })
 
-// esconder o lightbox
+// Esconder o Lightbox
 lightbox.addEventListener('click', () => {
     lightbox.classList.remove('show');
 })
+
+// Abrir o login
+const openLoginBtn = document.getElementById('openLogin')
+const containerLogin = document.querySelector('.container-login')
+
+openLoginBtn.addEventListener('click', () => {
+    containerLogin.classList.add('active')
+})
+
+// Fechar ao clicar fora do formulário ao precionar ESC
+containerLogin.addEventListener('click', (e) => {
+    if(e.target === containerLogin) {
+        containerLogin.classList.remove('active')
+    }
+})
+    
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        containerLogin.classList.remove('active')
+    }
+})  
